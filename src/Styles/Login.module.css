@@ -1,0 +1,98 @@
+:root {
+    --color: #1f69c9;
+}
+.loginContainer{
+    width: 100vw; height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; align-items: center;
+}
+.loginbox{
+    width: 26rem; height: fit-content;
+    padding: 1.5rem 1.5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.75rem;
+    box-shadow: 0 0 1.5rem 0.25rem #cfcfcf;
+}
+.loginbox h1{
+    color: var(--color);
+    padding: 1rem 2.5rem 0;    
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.5rem 2.5rem;
+}
+.loginInp{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2.5rem 0;
+}
+.loginInp input{
+    height: 1.75rem;
+    outline: none;
+    border: 1px solid #999;
+    margin-top: 0.35rem;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+}
+.loginInp label{
+    color: #333;
+}
+.btns{
+    padding: 1rem 2.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btns button{
+    width: 5rem; height: 2rem;
+    color: #fff;
+    background-color: var(--color);
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: 0.25s linear;
+}
+.btns button:hover{
+    background-color: #133f78;
+}
+.btns a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color);
+    letter-spacing: 0.05rem;
+}
+.danger{
+    color: #f00;
+    font-size: 0.75rem;
+}
+.accept {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0 0.5rem 0 2.5rem;
+}
+
+.accept input {
+    width: 20px;
+    height: 20px;
+    margin-top: 8px;
+}
+@media screen and (max-width: 480px) {
+    .loginbox{
+        width: 90%;
+        font-size: 90%;
+    }
+    .btns{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .btns button{
+        width: 100%;
+    }
+}

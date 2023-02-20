@@ -1,0 +1,118 @@
+:root {
+    --color: #1f69c9;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signupContainer {
+    width: 26rem;
+    /* height: 35rem; */
+    height: fit-content;
+    box-shadow: 0 0 1.5rem 0.25rem #cfcfcf;
+    border-radius: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+.signupTitle {
+    padding: 1rem 2.5rem 0;
+    color: var(--color);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.5rem 2.5rem;
+}
+
+.inpItem {
+    display: flex;
+    flex-direction: column;
+}
+
+.inpItem label {
+    color: #777;
+}
+
+.inp {
+    border: 1px solid #999;
+    border-radius: 0.35rem;
+    height: 1.75rem;
+    padding: 0 0.5rem;
+    outline: none;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.btns a {
+    text-decoration: none;
+    letter-spacing: 0.05rem;
+    color: var(--color);
+}
+
+.btns button {
+    cursor: pointer;
+    width: 5rem;
+    height: 2rem;
+    border-radius: 0.35rem;
+    border: 1px solid #ccc;
+    background-color: var(--color);
+    color: #fff;
+    transition: 0.25s linear;
+}
+
+.btns:hover {
+    color: #1d5fb7;
+}
+
+.inpItem p {
+    color: #f00;
+    font-size: 0.75rem;
+    margin: 0;
+    padding: 0;
+}
+
+.dangerInp {
+    border: 1px solid red;
+}
+
+.accept {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0 0.5rem 0 0;
+}
+
+.accept input {
+    width: 20px;
+    height: 20px;
+    margin-top: 8px;
+}
+
+@media screen and (max-width: 480px) {
+    .signupContainer{
+        width: 90%;
+        font-size: 90%;
+    }
+    .btns{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .btns button{
+        width: 100%;
+    }
+}
